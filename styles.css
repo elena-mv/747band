@@ -5,9 +5,11 @@ h1 {
   text-align: center;
 }
 
-ul {
+.about {
   list-style: none;
   display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
 }
 
 li:hover {
@@ -15,10 +17,21 @@ li:hover {
   transition:0.6s ease;
 }
 
-div{min-height:100vh;
-width:100vw;
-border: 1px;
+.band_header{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  min-height:100vh;
+  width:100vw;
+  border: 1px;
+  color: red;
+  background-image: url('images/747.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
+
 body {
   font-family: Verdana;
 }
@@ -27,4 +40,16 @@ div.contrast {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+img {
+  display:flex;
+  padding:20px;
+  margin:0 auto;
+  border-radius:130px;
+  max-width: 200px;
+  border: 1px;
+  flex-direction:row;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
