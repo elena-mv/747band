@@ -53,3 +53,9 @@ img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
+
+
+
+ul.social-icons li {
+display:inline-block;
+}
