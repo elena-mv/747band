@@ -1,19 +1,50 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8">
+    <!-- make this active if it's not scaling well for mobile devices: <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <title>747</title>
   <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="animate.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- added this for the responsive navbar: -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="Navresponsive.js"></script>
 </head>
-<body>
-  <div class='band_header animated flash'>
-  </div>
-  <div id="about" class="text-center">
 
- <div class="row">
+<!-- Navbar and header -->
+
+<body>
+
+<div class='band_header animated flash'>
+  <div class='container'>
+ <div class="topnav" id="myTopnav">
+    <!-- <a class="active" href="#home">Home</a> -->
+    <a href="#about">About 747</a>
+    <a href="#music">Latest music</a>
+    <a href="#promo">Gallery</a>
+    <a href="#gigs">Upcoming gigs</a>
+    <div class= nav-right id=Updates>
+    <a href="#updates">Get in touch</a>
+  </div>
+  <!-- this is to make it collapsable on screens below 600px: -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div>
+  </div>
+</div>
+
+
+
+
+<!-- About -->
+
+<div id="about" class="text-center">
+  <div class="row">
     <div class="col-sm">
       <img class='img-circle' src='Images/Vivek.jpg'>
       <large>Vivek</large><br> <small>Bassist</small>
@@ -31,7 +62,7 @@
       <large>Graeme</large><br><small>Guitar</small>
     </div>
   </div>
-  </div>
+</div>
 
   <div>
   <p>
@@ -42,29 +73,41 @@
 
   <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/519362808&color=%233a383f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
-</div>
-<div>
-  <p>
-    VIDEOS
-  </p>
-</div>
-<div>
-  <p>
-    TOUR DATES
-  </p>
-</div>
-<div>
-  <p>
-    GET UPDATES
-  </p>
+<p>
+  Bristol-born upbeat indie rock band bringing you edgy beats from the depths of Bedminster
+</p>
 
 
-  <input type="email" placeholder="Your email"/>
-  <input type="submit"/>
+
+
+<!-- Latest Music -->
+
+<!-- links to soundcloud for the 2 songs that they have? -->
+
+<div id="music" class="text-center">
+  <h1> LATEST MUSIC </h1>
+  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/519365802&color=%233a383f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+</div>
+
+https://soundcloud.com/747band/leggings
+
+https://soundcloud.com/747band/boys-unmixedunmastered
+
+<!-- Promo -->
+
+<div id="promo" class="text-center">
+  <h1> VIDEOS </h1>
+</div>
+
+
+<!-- Gig Dates -->
+<div id="gigs" class="text-center">
+  <h1> TOUR DATES </h1>
 </div>
 <div>
   <ul class="social-icons">
     <li><a href="https://www.facebook.com/747Bristol/"><img src="Images/FacebookBlack.png"/></a></li>
     <li><a href="https://www.instagram.com/747band/"><img src="Images/Instagram.png"/></a></li>
+  </ul>
 </body>
 </html>

@@ -1,27 +1,91 @@
-p{
-  color:black;
-}
-h1 {
-  text-align: center;
-}
-
-.about {
-  list-style: none;
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: inherit;
+  overflow:hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align-last: right;
 }
 
-li:hover {
-  font-size:1.2em;
-  transition:0.6s ease;
+/* Style the links inside the navigation bar */
+.topnav a{
+  float: left;
+  display: block;
+  color: grey;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
+.topnav a:last-of-type {
+  float: right;
+  text-align: right;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* This last bit is javascript but I;m not sure if I’ve linked it properly / what it does exactly: */
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+.container{
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
 .band_header{
-  display: flex;
+  /* display: flex;
   align-items: center;
   align-content: center;
-  justify-content: center;
+  justify-content: center; */
   min-height:100vh;
   width:100vw;
   border: 1px;
@@ -32,14 +96,11 @@ li:hover {
   background-size:cover;
 }
 
-body {
-  font-family: Verdana;
-}
-
-div.contrast {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.about {
+  list-style: none;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
 }
 
 img {
@@ -54,7 +115,14 @@ img {
   filter: grayscale(100%);
 }
 
+p {
+  width: 40%;
+  margin: 10vh 10vw;
+  font-size: 2em;
+  text-align: center;
+}
 
+/* this doesn't really work soz */
 
 ul.social-icons li {
 display:inline-block;
