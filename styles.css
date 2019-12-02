@@ -1,24 +1,17 @@
-/* Add a black background color to the top navigation */
 .navbar {
   overflow: hidden;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* Style the links inside the navigation bar */
 .navbar a{
-  /* don't know how to change the text colour!! :'( */
   padding: 14px 16px;
-  /* text-decoration: none; */
+  text-decoration: none;
   font-size: 20px;
 
 }
 
 .band_header{
-  /* display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center; */
   min-height:100vh;
   width:100vw;
   border: 1px;
@@ -29,19 +22,24 @@
   background-size:cover;
 }
 
-.about {
+/* .about {
   list-style: none;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-}
+} */
 
 body {
   background-image: url('images/background.png');
+  background-attachment: fixed;
 }
 
+.carousel img {
+  max-height: 500px;
+  max-width: 800px;
+}
 
-img {
+.eachboi img {
   display:flex;
   padding:20px;
   margin:0 auto;
@@ -72,5 +70,5 @@ p {
 /* this doesn't really work soz */
 
 ul.social-icons li {
-display:inline-block;
+  display:inline-block;
 }
