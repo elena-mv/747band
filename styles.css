@@ -36,6 +36,11 @@
   flex-wrap:wrap;
 }
 
+body {
+  background-image: url('images/background.png');
+}
+
+
 img {
   display:flex;
   padding:20px;
@@ -48,11 +53,20 @@ img {
   filter: grayscale(100%);
 }
 
+.text-center {
+  color: white;
+}
+
+.display-4 {
+  color: white;
+}
+
 p {
   width: 40%;
   margin: 10vh 10vw;
   font-size: 2em;
   text-align: center;
+  color: white;
 }
 
 /* this doesn't really work soz */
