@@ -80,13 +80,17 @@ p {
   color: white;
   padding-top: 50px;
 }
-/* this doesn't really work soz */
 
 ul.social-icons li {
-display:inline-block;
 vertical-align: top;
-/* width: 50%; */
+width: 50%;
 float: left;
+
+}
+
+.music {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 label {
@@ -117,7 +121,24 @@ input[type=submit] {
   cursor: pointer;
 }
 
-
 input[type=submit]:hover {
   background-color: grey;
 }
+
+button {
+  display: flex; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+
+  font-size: 18px; /* Increase font size */
+  border-radius: 130px;
+  border: 1px solid white;
+  }
