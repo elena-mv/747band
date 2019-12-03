@@ -27,10 +27,6 @@
   background-size:cover;
 }
 
-.musicsoundcloud {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
 
 /* .about {
   list-style: none;
