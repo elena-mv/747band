@@ -43,17 +43,12 @@
       </div>
       <div class="navbtn">
         <form class="form-inline">
-          <button type="button" class="btn btn-outline-light">Get in touch</button>
+          <a class="nav-link text-light" href="#updates">Get updates</a>
         </div>
       </nav>
     </div>
 
     <div id="music">
-      <p>
-
-        LATEST MUSIC
-
-      </p>
       <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/519365802&color=%233a383f&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </div>
 
@@ -118,48 +113,53 @@
 
     <div id="promo" class="text-center">
       <h1> VIDEOS </h1>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.facebook.com/747Bristol/videos/584297922035238/" allowfullscreen></iframe>
+      </div>
     </div>
 
 
 
-<!-- Gig Dates -->
-<div id="gigs" class="text-center">
-  <h1> TOUR DATES </h1>
+    <!-- Gig Dates -->
+    <div id="gigs" class="gigs text-center">
+      <h1> ON TOUR </h1>
+    <a href='https://croftersrights.co.uk/'>December 5th @ The Crofters Rights, Bristol</a>
+    <br>
+    <a href='http://www.mrwolfs.com/'>December 20th @ Mr Wolfs, Bristol</a>
 </div>
 
-<!-- Get Updates -->
-<div>
-  <ul class="social-icons">
-    <li><a href="https://www.facebook.com/747Bristol/"><img src="Images/FacebookBlack.png"/></a></li>
-    <li><a href="https://www.instagram.com/747band/"><img src="Images/Instagram.png"/></a></li>
-  </ul>
-</div>
-<div>
-  <form>
-  <label for="fname">First Name</label>
-  <br>
-  <input type="text" id="fname" name="fname">
-  <br>
-  <label for="lname">Last Name</label>
-  <br>
-  <input type="text" id="lname" name="lname">
-  <br>
-  <label for="country">Country</label>
-  <br>
-  <select id="country" name="country">
-    <option value="   ">   </option>
-    <option value="Australia">Australia</option>
-    <option value="UK">UK</option>
-    <option value="USA">USA</option>
-  </select>
-  <br>
-  <label for="email">Email</label>
-  <br>
-  <input type="text" id="email" name="email">
 
-  <input type="submit" value="Submit">
-</form>
-</div>
-</body>
-</html>
-
+    <!-- Get Updates -->
+    <div id="updates">
+    <div class="mx-auto text-center">
+      <form>
+        <label for="fname">First Name</label>
+        <br>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label for="lname">Last Name</label>
+        <br>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <label for="country">Country</label>
+        <br>
+        <select id="country" name="country">
+          <option value="   ">   </option>
+          <option value="Australia">Australia</option>
+          <option value="UK">UK</option>
+          <option value="USA">USA</option>
+        </select>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="text" id="email" name="email">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com/747Bristol/"><img src="Images/FacebookBlack.png"/></a></li>
+      <li><a href="https://www.instagram.com/747band/"><img src="Images/Instagram.png"/></a></li>
+    </ul>
+        </div>
+  </body>
+  </html>
