@@ -86,11 +86,13 @@ p {
 
 ul.social-icons li {
 vertical-align: top;
-width: 50%;
-float: left;
-
+/* width: 50%; */
+/* float: left; */
+  display: inline-block;
 }
-
+ul.social-icons li a img {
+  margin-top: 10px;
+}
 .music {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -128,7 +130,7 @@ input[type=submit]:hover {
   background-color: grey;
 }
 
-button {
+button#myBtn {
   display: flex; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
