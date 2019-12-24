@@ -1,0 +1,15 @@
+Things I can add but not sure About
+
+From the BICEP / NINJA website:
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+I think this has something to do with supporting new / old browsers.
+
+Open graph stuff: not sure how to use that or what it means. I think it's used by Facebook to link things and integrate them together?
+<meta property="og:title" content="747 band">
+<meta property="og:image" content="https://ninjatune.net/images/ui/ninja-tune-logo.jpg">
+<meta itemprop="image" content="https://ninjatune.net/images/ui/ninja-tune-logo.jpg">
+<meta property="og:description" content="Home of Ninja Tune, Coldcut, Bonobo, Cinematic Orchestra, Roots Manuva, Young Fathers, The Bug, Actress and more">
+<meta property="og:site_name" content="Ninja Tune">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ninjatune.net/home">
