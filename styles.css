@@ -33,6 +33,9 @@ body {
   background-attachment: fixed;
 }
 
+.music_about {
+  min-height:100vh;
+}
 .carousel img {
   max-height: 500px;
   max-width: 800px;
@@ -63,12 +66,12 @@ body {
 }
 
 p {
-  width: 40%;
-  margin: 10vh 10vw;
-  font-size: 2em;
-  text-align: center;
-  color: white;
-  font-family: sans-serif;
+  /* width: 40%; */
+  /* margin: 10vh 10vw; */
+  /* font-size: 2em; */
+  /* text-align: center; */
+  /* color: white;
+  font-family: sans-serif; */
 }
 
 .gigs {
